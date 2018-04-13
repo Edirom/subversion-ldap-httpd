@@ -20,6 +20,10 @@ LoadModule	authnz_ldap_module   modules/mod_authnz_ldap.so
     AuthLDAPBindDN "${AuthLDAPBindDN}" 
     AuthLDAPBindPassword "${AuthLDAPBindPassword}" 
     Require ldap-group CN=vife,CN=Users,DC=muwi,DC=hfm-detmold,DC=de
+    # read-only access
+    <limit GET PROPFIND OPTIONS HEAD>
+        Require ldap-user redmine
+    </limit>
 </Location>
 EOF
 
