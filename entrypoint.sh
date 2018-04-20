@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # add our svn location to the httpd config
-cat <<EOF >> /usr/local/apache2/conf/httpd.conf
+cat <<EOF > /usr/local/apache2/conf/extra/vife.conf
 LoadModule	dav_module           modules/mod_dav.so
 LoadModule	dav_svn_module       /usr/lib/apache2/modules/mod_dav_svn.so
 LoadModule	authz_svn_module     /usr/lib/apache2/modules/mod_authz_svn.so
