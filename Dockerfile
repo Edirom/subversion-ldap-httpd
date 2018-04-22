@@ -6,6 +6,7 @@ LABEL maintainer="Peter Stadler for the ViFE"
 ARG AuthLDAPURL
 ARG AuthLDAPBindDN
 ARG AuthLDAPBindPassword
+ARG RequireLDAPGroup
 
 RUN apt-get update && apt-get --yes --force-yes --no-install-recommends install subversion libapache2-svn
 COPY entrypoint.sh /my-docker-entrypoint.sh
