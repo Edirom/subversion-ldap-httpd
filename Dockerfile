@@ -11,7 +11,7 @@ ARG OIDCCryptoPassphrase
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y curl subversion ca-certificates libapache2-mod-auth-openidc && \
-    rm -rf /var/lib/apt/lists/* \
+    rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh /my-docker-entrypoint.sh
 RUN chmod 755 /my-docker-entrypoint.sh
