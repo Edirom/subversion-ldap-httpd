@@ -25,7 +25,7 @@ OIDCRemoteUserClaim preferred_username
 <Location />
     DAV svn
     SVNParentPath /var/svn
-    SVNListParentPath Onx
+    SVNListParentPath On
 
     AuthType openid-connect
     Require valid-user
