@@ -22,6 +22,9 @@ OIDCCryptoPassphrase <password>
 # maps the preferred_username claim to the REMOTE_USER environment variable
 OIDCRemoteUserClaim preferred_username
 
+# need to set OIDCXForwardedHeaders since we're behind an SSL terminating proxy
+OIDCXForwardedHeaders X-Forwarded-Host
+
 <Location />
     DAV svn
     SVNParentPath /var/svn
