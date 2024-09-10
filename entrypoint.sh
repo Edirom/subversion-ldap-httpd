@@ -23,7 +23,7 @@ OIDCCryptoPassphrase <password>
 OIDCRemoteUserClaim preferred_username
 
 # need to set OIDCXForwardedHeaders since we're behind an SSL terminating proxy
-OIDCXForwardedHeaders X-Forwarded-Host
+OIDCXForwardedHeaders X-Forwarded-Host X-Forwarded-Port X-Forwarded-Proto
 
 <Location />
     DAV svn
