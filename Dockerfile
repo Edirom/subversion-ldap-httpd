@@ -1,5 +1,5 @@
 FROM httpd:2.4
-LABEL maintainer="Peter Stadler for the ViFE"
+LABEL org.opencontainers.image.authors="Peter Stadler for the ViFE"
 
 # For information about these parameters see 
 # https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html
